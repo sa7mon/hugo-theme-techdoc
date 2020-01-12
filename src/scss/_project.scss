@@ -205,3 +205,17 @@ footer {
 	text-align: right;
 	color: #999;
 }
+
+
+/* Dan's rules */
+
+img.bordered {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+img.centered {
+	display: block;
+	margin: auto;
+}
