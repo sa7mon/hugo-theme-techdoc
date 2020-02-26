@@ -20,7 +20,7 @@
 {{- template "_internal/opengraph.html" . -}}
 <meta property="og:image" content="{{ .Site.Params.main_og_image | absURL }}" />
 <!-- Twitter tags -->
-{{- template "_internal/twitter_cards.html" . -}}
+{{- partial "twitter-cards.html" . -}}
 <link rel="stylesheet" href="{{"css/theme.min.css" | absURL}}">
 {{ partial "meta/chroma.html" . -}}
 <script src="{{"js/fontawesome-5.0.6-all.js" | absURL}}" integrity="sha384-0AJY8UERsBUKdWcyF3o2kisLKeIo6G4Tbd8Y6fbyw6qYmn4WBuqcvxokp8m2UzSD"></script>
