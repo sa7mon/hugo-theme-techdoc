@@ -15,18 +15,17 @@
 <link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml">
 <link rel="canonical" href="{{ .Permalink }}">
 <!-- Open Graph tags -->
-{{ template "_internal/opengraph.html" . }}
-
+{{- template "_internal/opengraph.html" . -}}
+<meta property="og:image" content="{{ .Site.Params.main_og_image | absURL }}" />
 <!-- Twitter tags -->
-{{ template "_internal/twitter_cards.html" . }}
-
+{{- template "_internal/twitter_cards.html" . -}}
 <link rel="stylesheet" href="{{"css/theme.min.css" | absURL}}">
 {{ partial "meta/chroma.html" . -}}
 <script src="{{"js/fontawesome-5.0.6-all.js" | absURL}}" integrity="sha384-0AJY8UERsBUKdWcyF3o2kisLKeIo6G4Tbd8Y6fbyw6qYmn4WBuqcvxokp8m2UzSD"></script>
 <script src="{{"js/jquery.min.js" | absURL}}" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"></script>
 <script src="{{"js/jquery.easing.min.js" | absURL}}" integrity="sha384-leGYpHE9Tc4N9OwRd98xg6YFpB9shlc/RkilpFi0ljr3QD4tFoFptZvgnnzzwG4Q"></script>
 <script src="{{"js/bundle.js" | absURL}}" integrity="sha384-6jktPsnIKlYxq/SusO9u3dFpZJ0oxV4aUP1x8AUxmwbnhn6RtRE7uWJtNeWVxnu/"></script>
-{{- partial "meta/google-analytics-async.html" . -}}
+<!-- {{- partial "meta/google-analytics-async.html" . -}}
 {{- partial "meta/tag-manager.html" . -}}
 {{- partial "meta/google-site-verification.html" . -}}
-{{- partial "custom-css.html" . -}}
+{{- partial "custom-css.html" . -}} -->
